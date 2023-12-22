@@ -10,11 +10,17 @@ const usersRouter = require('./routes/users');
 const app = express();
 
 // middleware
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use((req, res, next) => {
+  console.log(req.path, req.method)
+  next()
+})
+
+//app.use(logger('dev'));
+//app.use(express.json());
+//app.use(express.urlencoded({ extended: false }));
 
 // routes
+// remember for postman tests, has to be localhost5000/users in order for routes to even run
 app.use('/users', usersRouter);
 
 dotenv.config();
