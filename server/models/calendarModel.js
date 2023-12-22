@@ -9,3 +9,9 @@ const calendarSchema = new Schema({
         required: true,
     },
 });
+
+// Creating user model
+const Calendar = mongoose.model("Calendar", calendarSchema);
+
+// Exporting user
+module.exports = Calendar;
