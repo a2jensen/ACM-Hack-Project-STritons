@@ -8,24 +8,31 @@ const {
 // routes
 
 // GET all workouts(add below)
-// this will be utilized for a tracking statistics page
+// usage: tracking statistics page?
 router.get('/', getWorkouts)
 
 // GET a single workout(add below)
-// this will be utilized for adding information to calendar
+// usage: calendar page, adding workouts to the calendar
 router.get('/:id', getWorkout)
 
 // POST a new workout(add below)
-// this will be utlized for adding workouts through dashboard
+// usage: adding workouts through dashboard
 router.post('/', createWorkout)
 
 // UPDATE a workout(add below)
-// this will be utilized for updating workouts through calendar/dashbaord
+// usage: updating workouts through calendar/dashboard
 router.patch('/:id', updateWorkout)
 
 // DELETE a workout(add below)
-// this will be utilized for deleting workouts in calendar/dashboard
+// usage: deleting workouts through calendar/dashboard
 router.delete('/:id', deleteWorkout)
+
+// OTHER POSSIBLE ROUTES THAT CAN BE ADDED
+
+// GET route that fetches exercise reccomendations for users
+// GET route that filters workout on data/type/reps/sets(this can be done through the GET all workouts maybe?)
+// GET route that fetches statistical data such as total workouts checkmarked/completed(this will require adding and editing to the schemas/routes/overall backend for this new type of data)
+
 
 // Export
 module.exports = router;
