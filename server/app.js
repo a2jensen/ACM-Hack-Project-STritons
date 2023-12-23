@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 
 // importing routes
 const usersRouter = require('./routes/users');
+const workoutRouter = require('./routes/workout')
 
 // express app
 const app = express();
@@ -15,13 +16,13 @@ app.use((req, res, next) => {
   next()
 })
 
-//app.use(logger('dev'));
-//app.use(express.json());
-//app.use(express.urlencoded({ extended: false }));
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // routes
-// remember for postman tests, has to be localhost5000/users in order for routes to even run
 app.use('/users', usersRouter);
+app.use('/workout', workoutRouter)
 
 dotenv.config();
 
@@ -32,4 +33,6 @@ mongoose.connect(process.env.DB_URL, {
   console.log('Connected to MongoDB database');
 });
 
+
+// export
 module.exports = app;
