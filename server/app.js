@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // routes
 app.use('/users', usersRouter);
-app.use('/workout', workoutRouter)
+app.use('/api/workout', workoutRouter)
 
 dotenv.config();
 

@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Styling for home workout board*/
+.workout-board {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 35%;
+  margin-left: 900px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.category-header {
+  background-color: #182B49;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.category-section {
+  margin: 10px 0;
+  background-color: #182B49;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.category-button {
+  background-color: white; /* Light blue */
+  font-size: large;
+  padding: 10px 15px;
+  margin: 5px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+}
