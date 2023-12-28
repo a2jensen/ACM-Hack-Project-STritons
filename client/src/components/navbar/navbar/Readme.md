@@ -1,0 +1,1 @@
+Navbar component. Self explainable

@@ -5,12 +5,14 @@ import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Navbar from './components/navbar/navbar/Navbar';
 
+// sets up routes for every page
+// navbar component is wrapped around every page as well
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
       <Navbar/>
-        <div className='pages'>
+        <div>
           <Routes>
             <Route
               path='/'
