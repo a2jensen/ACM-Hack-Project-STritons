@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
+// import controllers(add below)
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  const user = {
-    name: 'ACM Hack',
-    email: 'hack@acmucsd.org'
-  }
-  res.status(200).json({ user });
-});
+// TESTING POSTMAN
+router.get('/', (req, res) => {
+  res.json({mssg: 'GET all workouts'})
+})
 
+// routes
+
+// This exports router
 module.exports = router;

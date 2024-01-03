@@ -1,0 +1,1 @@
+This component is for the home page, it lists all the workouts/routines the users can explore(through clicking on the button and sending them to the intended page)
