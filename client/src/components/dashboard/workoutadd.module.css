@@ -1,0 +1,41 @@
+.workout_add {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 25%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 800px;
+    margin-right: 100px;
+    max-height: 300px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.title{
+  font-size: x-large;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.label{
+    display: block
+}
+
+.input{
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+    height: 25px;
+}
+
+.submit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+    height: 25px;
+}

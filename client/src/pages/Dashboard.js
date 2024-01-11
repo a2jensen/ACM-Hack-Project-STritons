@@ -1,13 +1,15 @@
 // Dashboard page
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 
-// importing workoutdashboard component
-import WorkoutDashboard from "../components/dashboard-add/WorkoutDashboard";
+// importing workoutdashboard component and dashboard component styles
+import WorkoutDashboard from "../components/dashboard/WorkoutDashboard";
+import WorkoutAdd from "../components/dashboard/WorkoutAdd";
+import styles from "../components/dashboard/workoutdashboard.module.css";
 
 const Home = () => {
-    // State to store workouts fetched from the backend.
-    const [workouts, setWorkouts] = useState(null)
+    const {workouts, dispatch} = useWorkoutsContext()
 
     // fetching data from backend
     useEffect(() => {
@@ -20,7 +22,7 @@ const Home = () => {
 
             // If the response is successful, update the workouts state.
             if (response.ok){
-                setWorkouts(json)
+                dispatch({type: 'SET_WORKOUTS', payload: json})
             }
         }
         // Calling the fetchWorkouts function.
@@ -28,12 +30,13 @@ const Home = () => {
     }, []) // Empty dependency array ensures this effect runs only once
 
     return (
-        <div>
+        <div className={styles.container}>
             <div>
                 {workouts && workouts.map((workout) => (
                     <WorkoutDashboard key={workout._id} workout={workout}/>
                 ))}
             </div>
+            <WorkoutAdd />
         </div>
     )
 }

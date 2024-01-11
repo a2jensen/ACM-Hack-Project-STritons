@@ -1,9 +1,0 @@
-.workout_board {
-    display: flex;
-    flex-direction: column;
-    background-color: lightgrey;
-    width: 35%;
-    margin-left: 900px;
-    padding: 20px;
-    border-radius: 20px;
-  }

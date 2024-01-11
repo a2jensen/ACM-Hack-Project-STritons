@@ -33,6 +33,24 @@ const getWorkouts = async (req, res) => {
 // POST workout data
 const createWorkout = async (req, res) => {
     const {day, exercise, sets, reps} = req.body
+
+    let emptyInputs = []
+
+    if(!exercise){
+        emptyInputs.push('exercise')
+    }
+    if(!day){
+        emptyInputs.push('day')
+    }
+    if(!sets){
+        emptyInputs.push('sets')
+    }
+    if(!reps){
+        emptyInputs.push('reps')
+    }
+    if(emptyInputs.length > 0){
+        return res.status(400).json({ error: 'Please fill in the following fields', emptyInputs})
+    }
     
     try {
         const workout = await Workout.create({day, exercise, sets, reps})

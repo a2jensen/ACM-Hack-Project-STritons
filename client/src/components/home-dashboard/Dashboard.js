@@ -1,4 +1,5 @@
 import styles from './dashboard.module.css'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
     return(
@@ -6,22 +7,22 @@ const Dashboard = () => {
                 <h2 className={styles.category_header}>Explore Workouts</h2>
                 <div className={styles.category_section}>
                     <h3>Upper Body</h3>
-                    <button className={styles.category_button}>Chest</button>
-                    <button className={styles.category_button}>Back</button>
-                    <button className={styles.category_button}>Biceps</button>
-                    <button className={styles.category_button}>Shoulders</button>
+                    <button className={styles.category_button}><Link to='/infoupperbody'>Chest</Link></button>
+                    <button className={styles.category_button}><Link to='/infoupperbody'>Back</Link></button>
+                    <button className={styles.category_button}><Link to='/infoupperbody'>Biceps</Link></button>
+                    <button className={styles.category_button}><Link to='/infoupperbody'>Shoulders</Link></button>
                 </div>
                 <div className={styles.category_section}>
                     <h3>Lower Body</h3>
-                    <button className={styles.category_button}>Glutes</button>
-                    <button className={styles.category_button}>Quads</button>
-                    <button className={styles.category_button}>Calf</button>
-                    <button className={styles.category_button}>Placeholder</button>
+                    <button className={styles.category_button}><Link to='/infolowerbody'>Glutes</Link></button>
+                    <button className={styles.category_button}><Link to='/infolowerbody'>Quads</Link></button>
+                    <button className={styles.category_button}><Link to='/infolowerbody'>Calf</Link></button>
+                    <button className={styles.category_button}><Link to='/infolowerbody'>Placholder</Link></button>
                 </div>
                 <div className={styles.category_section}>
                     <h3>Routines</h3>
-                    <button className={styles.category_button}>PPL</button>
-                    <button className={styles.category_button}>Arnold Split</button>
+                    <button className={styles.category_button}><Link to='/inforoutines'>PPL</Link></button>
+                    <button className={styles.category_button}><Link to='/inforoutines'>Arnold Split</Link></button>
                 </div>
             </div>
     )

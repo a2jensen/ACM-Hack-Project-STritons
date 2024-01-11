@@ -1,0 +1,25 @@
+.container {
+    background-color: lightgrey;
+    padding: 1%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+
+.header {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: green;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+.info {
+    background-color: white;
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}

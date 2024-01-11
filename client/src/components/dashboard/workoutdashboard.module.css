@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+}
+
+.title{
+  color: green;
+  font-size: x-large;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.workout_board {
+  position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 300%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+  .trash_icon { /* This is the new class for the trash icon */
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer; /* Optional: changes the cursor to a pointer when hovering over the icon */
+  }

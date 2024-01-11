@@ -1,9 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-// pages and components
+// importing pages and navbar
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
-import Navbar from './components/navbar/navbar/Navbar';
+import Routine from './pages/Routine'
+import InfoLowerBody from './pages/InfoLowerBody'
+import InfoUpperBody from './pages/InfoUpperBody'
+import InfoRoutines from './pages/InfoRoutines'
+
+import Navbar from './components/navbar/navbar/Navbar'
+
 
 // sets up routes for every page
 // navbar component is wrapped around every page as well
@@ -21,6 +27,22 @@ function App() {
             <Route
               path='/dashboard'
               element={<Dashboard />}
+            />
+            <Route 
+              path='/routine'
+              element={<Routine />}
+            />
+            <Route 
+              path='/infoupperbody'
+              element={<InfoUpperBody />}
+            />
+            <Route 
+              path='/infolowerbody'
+              element={<InfoLowerBody />}
+            />
+            <Route 
+              path='/inforoutines'
+              element={<InfoRoutines />}
             />
           </Routes>
         </div>

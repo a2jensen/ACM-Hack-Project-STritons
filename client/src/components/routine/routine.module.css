@@ -1,0 +1,36 @@
+.routine_container {
+    background-color: lightgrey;
+    padding: 1%;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+    display: grid;
+}
+
+.routine_calendar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+  }
+
+.routine_day {
+    padding: 20px;
+    background-color: #182B49;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 10px;
+    width: 12%;
+}
+
+.routine_header {
+    text-align: center;
+    color: white
+}
+
+.routine_workout{
+    background-color: white;
+    color: #182B49;
+    border-radius: 5px;
+}

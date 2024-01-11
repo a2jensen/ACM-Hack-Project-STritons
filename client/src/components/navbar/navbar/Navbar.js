@@ -10,7 +10,7 @@ const NavBar = () => {
                 <Link href="/">STritons</Link>
             </div>
             <div className={styles.nav_buttons}>
-                <Link href="placeholder">Routine</Link>
+                <Link to="/routine">Routine</Link>
                 <Link to="/dashboard"> Dashboard </Link>
                 <Link to="/"> Home </Link>
             </div>
