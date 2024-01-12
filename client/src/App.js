@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react';
 
 // importing pages and navbar
 import Home from './pages/Home'
@@ -7,6 +8,7 @@ import Routine from './pages/Routine'
 import InfoLowerBody from './pages/InfoLowerBody'
 import InfoUpperBody from './pages/InfoUpperBody'
 import InfoRoutines from './pages/InfoRoutines'
+import Login from './pages/Login'
 
 import Navbar from './components/navbar/navbar/Navbar'
 
@@ -17,9 +19,13 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <div>
           <Routes>
+            <Route 
+              path='/login'
+              element={<Login />}
+            />
             <Route
               path='/'
               element={<Home />}

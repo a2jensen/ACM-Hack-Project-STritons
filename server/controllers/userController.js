@@ -1,9 +1,17 @@
 // importing mongoose
-import mongoose from 'mongoose';
-const { Schema } = mongoose;
-// importing userModel
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
 const User = require('../models/userModel')
 
-// add all CRUD functions
+// login a user
+const loginUser = async (req, res) => {
+  res.json({mssg: 'login user'})
+}
 
-// export
+// signup a user
+const signupUser = async (req, res) => {
+  res.json({mssg: 'signup user'})
+}
+
+module.exports = { signupUser, loginUser }

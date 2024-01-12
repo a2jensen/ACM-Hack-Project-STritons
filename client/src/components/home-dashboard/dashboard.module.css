@@ -8,6 +8,7 @@
     margin-left: 200px;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
   
   .category_header {
@@ -36,4 +37,12 @@
     cursor: pointer;
     border-radius: 10px;
     width: 200px;
+    text-decoration: none;
   }
+
+  .category_button a {
+    text-decoration: none; /* Removes underline from links */
+    color: currentColor; /* Inherits color from parent */
+    display: block; /* Makes the link fill the button for clickable area */
+    color:#182B49;
+}

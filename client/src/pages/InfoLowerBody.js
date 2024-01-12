@@ -1,6 +1,8 @@
+import LowerBody from '../components/info-routines/LowerBody'
+
 const Home = () => {
     return (
-        <div>Lower body info page</div>
+        <LowerBody />
     )
 }
 

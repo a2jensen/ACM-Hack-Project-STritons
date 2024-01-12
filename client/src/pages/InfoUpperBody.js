@@ -1,7 +1,9 @@
 // code for upper body pages
+import UpperBody from '../components/info-routines/UpperBody'
+
 const Home = () => {
     return (
-        <div>Upper body info page</div>
+       <UpperBody />
     )
 }
 

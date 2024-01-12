@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 // importing routes
-const usersRouter = require('./routes/users');
+const userRouter = require('./routes/user');
 const workoutRouter = require('./routes/workout')
 
 // express app
@@ -21,8 +21,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // routes
-app.use('/users', usersRouter);
-app.use('/api/workout', workoutRouter)
+app.use('/api/user', userRouter);
+app.use('/api/workout', workoutRouter);
 
 dotenv.config();
 

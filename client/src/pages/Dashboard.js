@@ -7,6 +7,7 @@ import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import WorkoutDashboard from "../components/dashboard/WorkoutDashboard";
 import WorkoutAdd from "../components/dashboard/WorkoutAdd";
 import styles from "../components/dashboard/workoutdashboard.module.css";
+import Navbar from '../components/navbar/navbar/Navbar'
 
 const Home = () => {
     const {workouts, dispatch} = useWorkoutsContext()

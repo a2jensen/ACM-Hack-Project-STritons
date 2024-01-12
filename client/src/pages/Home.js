@@ -4,7 +4,7 @@
 import Dashboard from '../components/home-dashboard/Dashboard';
 import body from '../assets/home_body.png'
 import styles from '../assets/home_body.module.css'
-
+import Navbar from '../components/navbar/navbar/Navbar'
 
 const Home = () => {
     return (

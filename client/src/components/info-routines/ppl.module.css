@@ -1,25 +1,76 @@
 .container {
-    background-color: lightgrey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.info_box {
+    background-color: #182B49;
     padding: 1%;
-    height: 400px;
-    margin: 20px;
+    height: 650px;
+    margin: 25px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
 }
 
 .header {
-    text-align: center;
     padding-top: 10px;
-    color: white;
+    color: #FFCD00;
     background-color: green;
-    height: 50px;
+    height: 40px;
     margin-top: 0;
     border-radius: 10px;
+    padding-left: 10px;
 }
+
+.sub_header {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.day_list {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.exercise_day {
+    margin-top: 8px; /* Creates space between 'Sunday' and 'Push Day' */
+    margin-bottom: 8px; /* Creates space between 'Push Day' and 'Bench Press' */
+}
+
+.day {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    min-width: 150px;
+    text-align: center;
+    height: fit-content;
+}
+
+.day_name {
+    padding-top: 10px;
+    font-size: x-large;
+}
+
+.exercise_info {
+    padding-top: 10px;
+}
+
 
 .info {
     background-color: white;
-    display: grid;
     margin: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    border-radius: 10px;
+}
+.info_ppl {
+    background-color: white;
+    display: inline-flex;
+    margin: 20px;
+    border-radius: 10px;
+    min-height: 125px;
+    margin-left: 20px;
+    padding: 10px;
 }
