@@ -25,6 +25,7 @@ Note: MongoDB database is setup on UCSD account
 hack-team-3 project. From there you can proceed and click on "connect",
 follow the instructions there by installing MongoDB, go to server and create a .env file,
 create two variables; DB_URL="contains the provided code given", PORT=5000
+NOTE: Password for DB_URL is hackteam123
 5. Now you can run `yarn start`
    or `npm run start` to start the server.
 6. Website will now be fully functional!
