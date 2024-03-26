@@ -22,7 +22,8 @@ Note: MongoDB database is setup on UCSD account
 2. To start the client, run `yarn dev` or `npm run start` in the same directory
 3. In another command window, `cd` into `server` and run `yarn install` and `yarn start`
    or `npm run start` to install all dependencies and start the server.
-4. To establish connection to MongoDB database, login to MongoDB and click on "connect",
+4. To establish connection to MongoDB database, login to MongoDB and navigate to 
+hack-team-3 project. From there you can proceed and click on "connect",
 follow the instructions there by installing MongoDB, go to server and create a .env file,
 create two variables; DB_URL:"contains the provided code given", PORT:5000
 5. Now you can run `yarn start`
